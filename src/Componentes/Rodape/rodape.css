@@ -1,0 +1,28 @@
+footer {
+  color: white;
+  background: #1C1C1C;
+  bottom: 0%;
+  width: 100%;
+  margin-top: 5vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  z-index: 2;
+}
+.inscricao-form {
+  margin: 10px 100px 10px 100px ;
+}
+.buton-form {
+  color: #1C1C1C;
+  background-color: greenyellow;
+  border: solid 1px black;
+}
+.buton-form:hover {
+  color: greenyellow;
+  background-color: #1C1C1C;
+  border: solid 1px #1C1C1C;
+}
+.inscricao {
+  color: greenyellow;
+  letter-spacing: 6px;
+}

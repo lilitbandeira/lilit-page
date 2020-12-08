@@ -1,0 +1,59 @@
+#card-config2 {
+  margin: 5vw 10vw 2vw 10vw;
+  border: solid 1px #1C1C1C;
+}
+#card-text2 {
+  font-size: 20px;
+  text-align: center;
+  color: #1C1C1C;
+  background-color: greenyellow;
+  border-radius: 3px;
+  border: solid 1px #1C1C1C;
+  font-family: 'Syne Mono', monospace;
+}
+#card-subtext2 {  
+  border-radius: 3px;
+  border: solid 1px #1C1C1C;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Syne Mono', monospace;
+}
+#conteudo {
+  padding: 0px;
+  margin: 0px;
+}
+#card-config3 {
+  margin: 5vw 10vw 2vw 10vw;
+  border: solid 1px #1C1C1C;
+}
+#card-text3 {
+  font-size: 20px;
+  text-align: center;
+  color: #1C1C1C;
+  background-color: orangered;
+  border-radius: 3px;
+  border: solid 1px #1C1C1C;
+  font-family: 'Syne Mono', monospace;
+}
+#card-subtext3 {  
+  border-radius: 3px;
+  border: solid 1px #1C1C1C;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Syne Mono', monospace;
+}
+.soundcloud-um {
+  font-size: 10px; 
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+}
+.soundcloud-dois {
+  color: #cccccc; 
+  text-decoration: none;
+}

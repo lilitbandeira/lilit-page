@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+#card-config {
+  margin: 5vw 10vw 2vw 10vw;
+  border: solid 1px #1C1C1C;
+}
+
+#card-text {
+  font-size: 20px;
+  text-align: center;
+  color: #1C1C1C;
+  background-color: greenyellow;
+  border-radius: 3px;
+  border: solid 1px #1C1C1C;
+  font-family: 'Syne Mono', monospace;
+}
+#card-subtext {
+  border-radius: 3px;
+  border: solid 1px #1C1C1C;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Syne Mono', monospace;
+}
+.slide-config {
+  margin: 2vw 10vw 5vw 10vw;
+  border: solid 2px #1C1C1C;
+  border-radius: 5px;
+}
