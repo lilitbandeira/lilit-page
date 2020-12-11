@@ -4,6 +4,8 @@ import Home from './Componentes/Home/home';
 import Sonora from './Componentes/Sonora/sonora';
 import Audiovisual from './Componentes/Audiovisual/audiovisual';
 import Producao from './Componentes/Producao/producao';
+import Apoie from './Componentes/Apoie/apoie';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path='/sonora' component={Sonora} />
           <Route path='/audiovisual' component={Audiovisual} />
           <Route path='/producao' component={Producao} />
+          <Route path='/apoie' component={Apoie} />
         </Switch>
       </div>
     </BrowserRouter>

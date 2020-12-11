@@ -3,6 +3,7 @@ import './producao.css';
 import { Card, CardHeader, CardBody, CardText} from 'reactstrap';
 
 function Producao() {
+  
   return (
     <div>
       <Card id="card-config5">

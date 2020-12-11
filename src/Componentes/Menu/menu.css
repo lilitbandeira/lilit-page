@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-@import url('https://www.w3schools.com/w3css/4/w3.css');
 
 img {
   margin-top: -20px;
@@ -9,28 +8,25 @@ div {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
-
-#pesquisa { 
-    height: 30px;
-
-}
-#pesquisa2 {
-  padding: 3px;
-  color: #1C1C1C;
-  background-color: greenyellow;
-  border: solid 1px grey;
-}
 .nav-text {
   color: #F5F5F5;
   position: fixed;
   z-index: 2;
   top: 0;
   width: 100%;
- 
 } 
+#pesquisa { 
+    height: 30px;
+}
+#pesquisa2 {
+  padding: 3px;
+  color: #1C1C1C;
+  background-color: greenyellow;
+  border: solid 1px #1C1C1C;
+}
 #pesquisa2:hover {
   color: greenyellow;
-  border: greenyellow;
+  border: none;
   background-color: #1C1C1C;
 }
 li {
@@ -38,6 +34,11 @@ li {
   }
 Nav {  
   background-color: #1C1C1C;
+  opacity: 0.9;
 }
-
-
+.link-formato {
+  text-decoration: none!important;
+}
+.link-formato:hover {
+  color: greenyellow;
+}

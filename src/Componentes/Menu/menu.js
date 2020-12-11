@@ -2,11 +2,46 @@ import React, {useState} from 'react';
 import './menu.css';
 import gif from '../../images/Home.gif';
 import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
- 
+import ApiBusca from '../../services/api';
 
 const Menu = (props) => {
+  
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  
+  const [entrada, setEntrada] = useState('');
+  const [resultado, setResultado] = useState(null);
+  const pesquisaWeb = (event) => {
+    event.preventDefault();
+
+    if (entrada.trim() !== ''){
+        ApiBusca.get(entrada).then(
+            (response) => {
+                if (response !== null && response.data !== null){
+                    setResultado(response.data);
+                }
+            }
+        )
+    } else {
+        setResultado(null);
+    }
+  }
+
+  /*var options = {
+    method: 'GET',
+    url: {ApiBusca},
+    params: {pageNumber: '1', q: '', autoCorrect: 'true', pageSize: '10'},
+    headers: {
+      'x-rapidapi-key': 'aec654201dmsh5c9f461abe6a604p19428cjsn4f9340eb7089',
+      'x-rapidapi-host': 'contextualwebsearch-websearch-v1.p.rapidapi.com'
+    }
+  };
+  
+  axios.request(options).then(function (response) {
+      console.log(response.data);
+  }).catch(function (error) {
+      console.error(error);
+  }); */
 
   return (
       <div className={'menu-position'}>
@@ -16,33 +51,24 @@ const Menu = (props) => {
               <Collapse isOpen={isOpen} navbar>
                   <Nav className={"mr-auto"}>
                       <NavItem>
-                          <NavLink href="/audiovisual">AUDIOVISUAL</NavLink>
+                          <NavLink className={'link-formato'} href="/audiovisual">AUDIOVISUAL</NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink href="/sonora">MÚSICA</NavLink>
+                          <NavLink className={'link-formato'} href="/sonora">MÚSICA</NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink href="/producao">PRODUÇÃO CULTURAL</NavLink>
+                          <NavLink className={'link-formato'} href="/producao">PRODUÇÃO CULTURAL</NavLink>
                       </NavItem>
-                      <UncontrolledDropdown nav inNavbar>
-                          <DropdownToggle nav caret>
-                              APOIE
-              </DropdownToggle >
-                          <DropdownMenu right>
-                              <DropdownItem>
-                              <a href="/page3">Doe por QRcode</a>
-                </DropdownItem>
-                            <DropdownItem divider />
-                              <DropdownItem>
-                              <a href="/page4">Compartilhe</a>
-                </DropdownItem>
-                          </DropdownMenu>
-                      </UncontrolledDropdown>
+                      <NavItem>
+                          <NavLink className={'link-formato'} href="/apoie">APOIE</NavLink>
+                      </NavItem>
                   </Nav>
-                  <NavItem>
+                  <NavItem> 
                     <form className={"form-inline my-0 my-lg-0"}>
-                    <input id='pesquisa' className={"form-control mr-sm-2"} type="search" placeholder="O que quer encontrar?"/>
-                    <button id='pesquisa2' className={"btn btn-outline my-2 my-sm-0"} type="submit">Pesquisar</button><br/><br/>
+                    <input id='pesquisa' className={"form-control mr-sm-2"} type="search" placeholder="O que quer encontrar?" onChange={ (e) => setEntrada(e.target.value) }/>
+                    <button id='pesquisa2' className={"btn btn-outline my-2 my-sm-0"} type="submit" onClick={pesquisaWeb}>Pesquisar</button><br/><br/>
+                    {resultado !== null ?
+                    <div> {resultado} </div> : "" } 
                     </form>
                   </NavItem>
               </Collapse>

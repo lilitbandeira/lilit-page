@@ -1,8 +1,8 @@
-#card-config5 {
+#card-config6 {
   margin: 5vw 10vw 2vw 10vw;
   border: solid 1px #1C1C1C;
 }
-#card-text5 {
+#card-text6 {
   font-size: 20px;
   text-align: center;
   color: #1C1C1C;
@@ -11,26 +11,10 @@
   border: solid 1px #1C1C1C;
   font-family: 'Syne Mono', monospace;
 }
-#card-subtext5 {  
+#card-subtext6 {  
   border-radius: 3px;
   border: solid 1px #1C1C1C;
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
   font-family: 'Syne Mono', monospace;
-}
-.video-div2 {
-  margin: 5vw 10vw 2vw 10vw;
-  border-radius: 5px;
-  position: relative;
-  padding-bottom:56.25%;
-  height: 0;
-  overflow: hidden;
-}
-.video-daily2 {
-  width:  100%;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top:  0px;
-  overflow: hidden;
 }
