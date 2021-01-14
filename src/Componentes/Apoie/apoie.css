@@ -1,20 +1,25 @@
-#card-config6 {
-  margin: 5vw 10vw 2vw 10vw;
-  border: solid 1px #1C1C1C;
+#qrcode {
+  margin: 1rem 0;
+  max-width: 100%;
 }
-#card-text6 {
-  font-size: 20px;
-  text-align: center;
-  color: #1C1C1C;
-  background-color: greenyellow;
-  border-radius: 3px;
-  border: solid 1px #1C1C1C;
-  font-family: 'Syne Mono', monospace;
+.apoie-animation {
+  animation: cursorApoie 500ms steps(50) infinite normal, 
+    typingApoie 3s steps(50) 1s normal both;
 }
-#card-subtext6 {  
-  border-radius: 3px;
-  border: solid 1px #1C1C1C;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Syne Mono', monospace;
+
+@keyframes typingApoie {
+  from{
+    width: 0;
+  }
+  to{
+    width: 25em;
+  }
+}
+@keyframes cursorApoie {
+  from {
+    border-right-color: #1C1C1C;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }

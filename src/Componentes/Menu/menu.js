@@ -1,48 +1,19 @@
 import React, {useState} from 'react';
 import './menu.css';
 import gif from '../../images/Home.gif';
-import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
-import ApiBusca from '../../services/api';
+import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink} from 'reactstrap';
+import linktree from '../../images/linktree.png'; 
+import instagram from '../../images/instagram.png';
+import twitter from '../../images/twitter.png';
+import dailymotion from '../../images/dailymotion.png';
+import soundcloud from '../../images/soundclpud.png';
+import contato from '../../images/contato.png';
 
-const Menu = (props) => {
+const Menu = () => {
   
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   
-  const [entrada, setEntrada] = useState('');
-  const [resultado, setResultado] = useState(null);
-  const pesquisaWeb = (event) => {
-    event.preventDefault();
-
-    if (entrada.trim() !== ''){
-        ApiBusca.get(entrada).then(
-            (response) => {
-                if (response !== null && response.data !== null){
-                    setResultado(response.data);
-                }
-            }
-        )
-    } else {
-        setResultado(null);
-    }
-  }
-
-  /*var options = {
-    method: 'GET',
-    url: {ApiBusca},
-    params: {pageNumber: '1', q: '', autoCorrect: 'true', pageSize: '10'},
-    headers: {
-      'x-rapidapi-key': 'aec654201dmsh5c9f461abe6a604p19428cjsn4f9340eb7089',
-      'x-rapidapi-host': 'contextualwebsearch-websearch-v1.p.rapidapi.com'
-    }
-  };
-  
-  axios.request(options).then(function (response) {
-      console.log(response.data);
-  }).catch(function (error) {
-      console.error(error);
-  }); */
-
   return (
       <div className={'menu-position'}>
           <Navbar id='menu' dark className={'nav-text'} expand="md">
@@ -63,14 +34,26 @@ const Menu = (props) => {
                           <NavLink className={'link-formato'} href="/apoie">APOIE</NavLink>
                       </NavItem>
                   </Nav>
-                  <NavItem> 
-                    <form className={"form-inline my-0 my-lg-0"}>
-                    <input id='pesquisa' className={"form-control mr-sm-2"} type="search" placeholder="O que quer encontrar?" onChange={ (e) => setEntrada(e.target.value) }/>
-                    <button id='pesquisa2' className={"btn btn-outline my-2 my-sm-0"} type="submit" onClick={pesquisaWeb}>Pesquisar</button><br/><br/>
-                    {resultado !== null ?
-                    <div> {resultado} </div> : "" } 
-                    </form>
-                  </NavItem>
+                  <Nav className={'social'}>
+                        <a className={"links-menu"} target="_blank" href={"https://linktr.ee/lilitbruja"}>
+                        <img className={"links-img"} alt="icone linktree" width="30" type='image/png' src={linktree}/> 
+                        </a>
+                        <a className={"links-menu"} target="_blank" href={"https://instagram.com/lilitbruja"}>
+                            <img className={"links-img"} alt="icone instagram" width="30" src={instagram}/>
+                        </a>
+                        <a className={"links-menu"} target="_blank" href={"https://twitter.com/lilitbruja"}>
+                            <img className={"links-img"} alt="icone twitter" width="30" src={twitter}/> 
+                        </a>
+                        <a className={"links-menu"} target="_blank" href={"https://dailymotion.com/lilitbruja"}>
+                            <img className={"links-img"} alt="icone dailymotion" width="30" src={dailymotion}/>
+                        </a>
+                        <a className={"links-menu"} target="_blank" href={"https://soundcloud.com/lilitbruja"}>
+                            <img className={"links-img"} alt="icone soundcloud" width="30" src={soundcloud}/>
+                        </a>
+                        <a className={"links-menu"} target="_blank" href={""}>
+                            <img className={"links-img"} alt="icone contato" width="30" src={contato}/>
+                        </a>
+                  </Nav>
               </Collapse>
           </Navbar>
       </div>

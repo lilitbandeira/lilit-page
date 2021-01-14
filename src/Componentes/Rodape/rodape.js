@@ -2,7 +2,8 @@ import React from 'react';
 import './rodape.css';
 import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-const Rodape = (props) => {
+const Rodape = () => {
+    
   return (
     <footer>
       <h2 className={'inscricao'}>INSCREVA-SE</h2>
@@ -45,7 +46,7 @@ const Rodape = (props) => {
           <Input type="checkbox" name="check" id="exampleCheck"/>
           <Label for="exampleCheck" check>Quero receber material exclusivo!</Label>
         </FormGroup><br/>
-        <Button className={'buton-form'}>Enviar</Button>
+        <Button onClick={() => {alert('Tudo certo! 🎉 Você receberá meus materiais exclusivos por e-mail📰. Obrigada! 🥰')}} className={'buton-form'}>Enviar</Button>
       </Form><br/>
           <h6>Copyright (c) - 2020 - L I L I T</h6>
     </footer>

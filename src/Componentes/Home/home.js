@@ -34,9 +34,9 @@ function Home() {
 
     <div >
       <Card id='card-config'>
-        <CardHeader id='card-text'>Quem é L I L I T?</CardHeader>
-        <CardBody id='card-subtext'>
-          <CardText>Lilit Bandeira é a artista por trás do projeto de música eletrônica e audiovisual <strong>L I L I T</strong>. Paraibana, reside em Recife desde 2017 onde cursa Cinema e Audiovisual na Universidade Federal de Pernambuco - UFPE. Como DJ atua como residente do coletivo recifense Maddam Music e possui uma carreira com trabalhos em festas, festivais e rádios do país. No audiovisual possui um curta metragem chamado Transborgs, lançado em 2019 na mostra absurda do 12º Festival de cinema de Triunfo. Sua atuação no audiovisual contempla fotografia, arte, som, montagem e finalização. Lilit também é produtora e gestora cultural independente, idealizadora do projeto 3001 em João Pessoa e produtora da festa Sangria em Campina Grande. Atualmente dedica-se ainda ao Desenvolvimento Web Front-end.</CardText>
+        <CardHeader id='card-text' className={'card-green'}><p className={'home-animation titulo-animation'}>Quem é <strong className={'lilit-name'}>L I L I T</strong>?</p></CardHeader>
+        <CardBody id='card-subtext' className={'justify-text'}>
+          <CardText>Lilit Bandeira é a artista por trás do projeto de música eletrônica e audiovisual <strong className={'lilit-name'}>L I L I T</strong>. Paraibana, reside em Recife desde 2017 onde cursa Cinema e Audiovisual na Universidade Federal de Pernambuco - UFPE. Como DJ atua como residente do coletivo recifense Maddam Music e possui uma carreira com trabalhos em festas, festivais e rádios do país. No audiovisual possui um curta metragem chamado Transborgs, lançado em 2019 na mostra absurda do 12º Festival de cinema de Triunfo. Sua atuação no audiovisual contempla fotografia, arte, som, montagem e finalização. Lilit também é produtora e gestora cultural independente, idealizadora do projeto 3001 em João Pessoa e produtora da festa Sangria em Campina Grande. Atualmente dedica-se ainda ao Desenvolvimento Web Front-end.</CardText>
         </CardBody>
       </Card>
       <UncontrolledCarousel className={'slide-config'} items={items} />

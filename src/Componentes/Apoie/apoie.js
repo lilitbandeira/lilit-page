@@ -1,16 +1,21 @@
 import React from 'react';
 import './apoie.css';
+import QrCode from '../../images/qrcode.jpeg';
 import { Card, CardHeader, CardBody, CardText} from 'reactstrap';
+
 
 function Apoie() {
 
   return (
     <div>
-      <Card id="card-config6">
-        <CardHeader id="card-text6">APOIE para manter estes trabalhos acontecendo</CardHeader>
-        <CardBody id="card-subtext6">
+      <Card id="card-config">
+        <CardHeader id="card-text" className={'card-green'}><p className={'apoie-animation titulo-animation'}>APOIE para manter estes trabalhos acontecendo</p></CardHeader>
+        <CardBody id="card-subtext" className={'center-text'}>
           <CardText>
-            Faça sua doação através da Chave Pix: contatodalilit@gmail.com ou pelo PayPal: lilitbandeira@gmail.com
+            <img id='qrcode' src={QrCode} /><br/><br/>
+            ou faça sua doação através de <br/><br/>
+            Chave Pix: contatodalilit@gmail.com<br/>
+            PayPal: lilitbandeira@gmail.com
           </CardText>
         </CardBody>
       </Card>

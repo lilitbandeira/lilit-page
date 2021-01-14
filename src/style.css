@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+body {
+  background: -webkit-gradient(linear, left top, right bottom, from(#F0F8FF), to(#F5F5F5)) fixed;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#card-config {
+  margin: 5vw 10vw 2vw 10vw;
+  border: solid 1px #1C1C1C;
+}
+#card-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #1C1C1C;
+  border-radius: 3px;
+  border: solid 1px #1C1C1C;
+  font-family: 'Syne Mono', monospace;
+  overflow: auto!important;
+  font-weight: 300;
+}
+.card-green {
+  background-color: greenyellow!important;
+}
+.card-orange {
+  background-color: orangered!important;
+}
+#card-subtext {  
+  border-radius: 3px;
+  border: solid 1px #1C1C1C;
+  font-size: 1.2rem;
+  font-family: 'Syne Mono', monospace;
+  font-weight: 300;
+}
+.lilit-name {
+  font-family: Arial;
+  letter-spacing: .1rem;
+}
+.center-text {
+  text-align: center;
+}
+.justify-text {
+  text-align: justify;
+}
+.video-div {
+  margin: 5vw 10vw 2vw 10vw;
+  border-radius: 5px;
+  padding-bottom:56.25%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+.video-daily {
+  width:  100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top:  0px;
+  overflow: hidden;
+}
+.titulo-animation {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #1c1c1c;
+  font-family: "Syne Mono", monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  border-right: 1px solid #1c1c1c;
+}

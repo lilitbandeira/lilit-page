@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# :cloud: Minha primeira página
+
+Página realizada em 2020 durante o curso TRANS.FORMA de Desenvolvimento Web Front-end do Porto digital e Rede Cidadã.
+
+<img src='/src/images/screen-page.jpg'/>
+
+Utilizei:
+
+![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
+
+
+
+Ainda tenho muitos planos pra essa página que foi criada para hospedar informações e sobre minha carreira como Dj, Realizadora Audiovisual e Produtora Cultural. 
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

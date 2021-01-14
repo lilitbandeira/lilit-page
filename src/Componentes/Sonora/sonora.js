@@ -5,11 +5,11 @@ import { Card, CardHeader, CardBody, CardText} from 'reactstrap';
 function Sonora() {
   return (
     <div>
-      <Card id="card-config2">
-        <CardHeader id="card-text2">L I L I T é DJ</CardHeader>
-        <CardBody id="card-subtext2">
+      <Card id="card-config">
+        <CardHeader id="card-text" className={'card-green'}><p className={'sonora-animation titulo-animation'}><strong className={'lilit-name'}>L I L I T</strong> é DJ</p></CardHeader>
+        <CardBody id="card-subtext" className={'justify-text'}>
           <CardText>
-            <strong>L I L I T</strong> é Dj residente do selo e coletivo Maddam
+          <strong className={'lilit-name'}>L I L I T</strong> é Dj residente do selo e coletivo Maddam
             em Recife - PE, selo que reclama o protagonismo feminino na cena
             eletrônica nordestina, da 3001 em João Pessoa - PB e da Sangria em
             Campina Grande - PB. Já passou por eventos como No Ar Coquetel
@@ -22,9 +22,9 @@ function Sonora() {
           </CardText>
         </CardBody>
       </Card>
-      <Card id="card-config3">
-        <CardHeader id="card-text3">Ouça alguns dos meus sets:</CardHeader>
-        <CardBody id="card-subtext3">
+      <Card id="card-config">
+        <CardHeader id="card-text" className={'card-orange'}><p className={'sonora2-animation titulo-animation'}>Ouça alguns dos meus sets:</p></CardHeader>
+        <CardBody id="card-subtext">
           <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src={'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/647280405&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'}>
           </iframe>
           <div className={'soundcloud-um'}>

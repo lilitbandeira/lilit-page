@@ -9,36 +9,30 @@ div {
   font-size: 18px;
 }
 .nav-text {
-  color: #F5F5F5;
-  position: fixed;
-  z-index: 2;
+  color: #F5F5F5!important;
   top: 0;
   width: 100%;
 } 
-#pesquisa { 
-    height: 30px;
-}
-#pesquisa2 {
-  padding: 3px;
-  color: #1C1C1C;
-  background-color: greenyellow;
-  border: solid 1px #1C1C1C;
-}
-#pesquisa2:hover {
-  color: greenyellow;
-  border: none;
-  background-color: #1C1C1C;
-}
-li {
-  list-style: none!important;
-  }
 Nav {  
   background-color: #1C1C1C;
   opacity: 0.9;
 }
 .link-formato {
   text-decoration: none!important;
+  padding-right: 1rem;
 }
 .link-formato:hover {
   color: greenyellow;
+}
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+.social {
+  padding-right: 1rem;
+  position: relative;
+}
+.social a {
+    padding-right: .6rem;
+}
+.links-menu img:hover {
+  width: 40px;
 }
